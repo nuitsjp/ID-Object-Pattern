@@ -1,0 +1,1024 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SalesOrderDetail</title>
+<link href="../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("SalesOrderDetail", " : "))</script>  : Public  &lt;&lt;table&gt;&gt; テーブル</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">作成日:</td>
+			<td width="85%" class="ObjectDetailsValue">2019/06/01 7:32:17</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">更新日:</td>
+			<td class="ObjectDetailsValue">2019/06/01 7:32:17</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />プロジェクト:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">作者:</td>
+			<td class="ObjectDetailsValue">nuits.jp</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">バージョン:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">フェーズ:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">状態:</td>
+			<td class="ObjectDetailsValue">設計中</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">複雑度:</td>
+			<td class="ObjectDetailsValue">簡単</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">難易度:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">優先度:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">多重度:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />追加情報:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">GUID:</td>
+			<td class="ObjectDetailsValue">{A0733606-D2F8-4b1e-B78E-D94543DAA49C}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">ダイアグラム:</td>
+			<td class="ObjectDetailsValue"><a href="EA1.htm">Database</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Individual products associated with a specific sales order. See SalesOrderHeader.&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">属性 </li>
+			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">操作 </li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">関連  To</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">タグ付き値 </li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">属性</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public int</i><br /><strong>&nbsp;&nbsp;SalesOrderID</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes142')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes142" border="0" />詳細:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes142_00" style="display: none;">
+							<td width="75"><i>別名:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes142_01" style="display: none;">
+							<td width="75"><i>初期値:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes142_02" style="display: none;">
+							<td width="75"><i>ステレオタイプ: </i></td>
+							<td>&lt;&lt;column&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes142_03" style="display: none;">
+							<td width="75"><i>順序: </i></td>
+							<td>Ordered <br /></td>
+						</tr>
+						<tr id="DetailsImageAttributes142_03" style="display: none;">
+							<td width="75"><i>範囲: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Primary key. Foreign key to SalesOrderHeader.SalesOrderID.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public int</i><br /><strong>&nbsp;&nbsp;SalesOrderDetailID</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes143')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes143" border="0" />詳細:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes143_00" style="display: none;">
+							<td width="75"><i>別名:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes143_01" style="display: none;">
+							<td width="75"><i>初期値:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes143_02" style="display: none;">
+							<td width="75"><i>ステレオタイプ: </i></td>
+							<td>&lt;&lt;column&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes143_03" style="display: none;">
+							<td width="75"><i>順序: </i></td>
+							<td>Ordered <br /></td>
+						</tr>
+						<tr id="DetailsImageAttributes143_03" style="display: none;">
+							<td width="75"><i>範囲: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					AutoNum=1<br>Increment=1<br>NotForRep=0<br>property=AutoNum=1;StartNum=1;Increment=1;<br>StartNum=1<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Primary key. One incremental unique number per product sold.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public smallint</i><br /><strong>&nbsp;&nbsp;OrderQty</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes144')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes144" border="0" />詳細:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes144_00" style="display: none;">
+							<td width="75"><i>別名:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes144_01" style="display: none;">
+							<td width="75"><i>初期値:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes144_02" style="display: none;">
+							<td width="75"><i>ステレオタイプ: </i></td>
+							<td>&lt;&lt;column&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes144_03" style="display: none;">
+							<td width="75"><i>順序: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes144_03" style="display: none;">
+							<td width="75"><i>範囲: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Quantity ordered per product.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public int</i><br /><strong>&nbsp;&nbsp;ProductID</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes145')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes145" border="0" />詳細:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes145_00" style="display: none;">
+							<td width="75"><i>別名:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes145_01" style="display: none;">
+							<td width="75"><i>初期値:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes145_02" style="display: none;">
+							<td width="75"><i>ステレオタイプ: </i></td>
+							<td>&lt;&lt;column&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes145_03" style="display: none;">
+							<td width="75"><i>順序: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes145_03" style="display: none;">
+							<td width="75"><i>範囲: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Product sold to customer. Foreign key to Product.ProductID.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public money</i><br /><strong>&nbsp;&nbsp;UnitPrice</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes146')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes146" border="0" />詳細:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes146_00" style="display: none;">
+							<td width="75"><i>別名:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes146_01" style="display: none;">
+							<td width="75"><i>初期値:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes146_02" style="display: none;">
+							<td width="75"><i>ステレオタイプ: </i></td>
+							<td>&lt;&lt;column&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes146_03" style="display: none;">
+							<td width="75"><i>順序: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes146_03" style="display: none;">
+							<td width="75"><i>範囲: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Selling price of a single product.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public money</i><br /><strong>&nbsp;&nbsp;UnitPriceDiscount</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes147')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes147" border="0" />詳細:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes147_00" style="display: none;">
+							<td width="75"><i>別名:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes147_01" style="display: none;">
+							<td width="75"><i>初期値:</i></td>
+							<td>0.0</td>
+						</tr>
+						<tr id="DetailsImageAttributes147_02" style="display: none;">
+							<td width="75"><i>ステレオタイプ: </i></td>
+							<td>&lt;&lt;column&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes147_03" style="display: none;">
+							<td width="75"><i>順序: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes147_03" style="display: none;">
+							<td width="75"><i>範囲: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Discount amount.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public numeric(38,6)</i><br /><strong>&nbsp;&nbsp;LineTotal</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes148')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes148" border="0" />詳細:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes148_00" style="display: none;">
+							<td width="75"><i>別名:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes148_01" style="display: none;">
+							<td width="75"><i>初期値:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes148_02" style="display: none;">
+							<td width="75"><i>ステレオタイプ: </i></td>
+							<td>&lt;&lt;column&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes148_03" style="display: none;">
+							<td width="75"><i>順序: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes148_03" style="display: none;">
+							<td width="75"><i>範囲: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Per product subtotal. Computed as UnitPrice * (1 - UnitPriceDiscount) * OrderQty.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public uniqueidentifier</i><br /><strong>&nbsp;&nbsp;rowguid</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes149')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes149" border="0" />詳細:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes149_00" style="display: none;">
+							<td width="75"><i>別名:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes149_01" style="display: none;">
+							<td width="75"><i>初期値:</i></td>
+							<td>newid()</td>
+						</tr>
+						<tr id="DetailsImageAttributes149_02" style="display: none;">
+							<td width="75"><i>ステレオタイプ: </i></td>
+							<td>&lt;&lt;column&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes149_03" style="display: none;">
+							<td width="75"><i>順序: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes149_03" style="display: none;">
+							<td width="75"><i>範囲: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public datetime</i><br /><strong>&nbsp;&nbsp;ModifiedDate</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes150')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes150" border="0" />詳細:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes150_00" style="display: none;">
+							<td width="75"><i>別名:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes150_01" style="display: none;">
+							<td width="75"><i>初期値:</i></td>
+							<td>getdate()</td>
+						</tr>
+						<tr id="DetailsImageAttributes150_02" style="display: none;">
+							<td width="75"><i>ステレオタイプ: </i></td>
+							<td>&lt;&lt;column&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes150_03" style="display: none;">
+							<td width="75"><i>順序: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes150_03" style="display: none;">
+							<td width="75"><i>範囲: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Date and time the record was last updated.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+<div class="ItemBody" id="OperationsTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">操作</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>AK_SalesOrderDetail_rowguid</strong>(					<a href="#" onclick="parent.toggleData('param{0BCF38DA-CD51-43ca-9E58-747B4FAA0FF9}')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="param{0BCF38DA-CD51-43ca-9E58-747B4FAA0FF9}" border="0" />rowguid: uniqueidentifier</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{0BCF38DA-CD51-43ca-9E58-747B4FAA0FF9}00" style="display: none;">
+							<td width="50"><strong>既定値:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{0BCF38DA-CD51-43ca-9E58-747B4FAA0FF9}01" style="display: none;">
+							<td width="50"><strong>種類:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{0BCF38DA-CD51-43ca-9E58-747B4FAA0FF9}02" style="display: none;">
+							<td width="50"><strong>ステレオタイプ: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{0BCF38DA-CD51-43ca-9E58-747B4FAA0FF9}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageOperations151" onclick="parent.toggleDiv('detailsDIVOperations151','DetailsImageOperations151')" />詳細:
+						<div id="detailsDIVOperations151" class="DetailsDiv" >
+					<i> &lt;&lt;unique&gt;&gt; </i>
+					<table>
+						<tr>
+							<td valign = "top"><i>タグ:</i><span style="margin-left: .7cm;"> </span></td>
+							<td>NonClustered=1<br/>property=NonClustered=1;<br/></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Unique nonclustered constraint. Used to support replication samples.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>PK_SalesOrderDetail_SalesOrderID_SalesOrderDetailID</strong>(					<a href="#" onclick="parent.toggleData('param{9A753CA0-95C4-405d-813B-2A59E4C75D68}')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="param{9A753CA0-95C4-405d-813B-2A59E4C75D68}" border="0" />SalesOrderID: int</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{9A753CA0-95C4-405d-813B-2A59E4C75D68}00" style="display: none;">
+							<td width="50"><strong>既定値:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{9A753CA0-95C4-405d-813B-2A59E4C75D68}01" style="display: none;">
+							<td width="50"><strong>種類:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{9A753CA0-95C4-405d-813B-2A59E4C75D68}02" style="display: none;">
+							<td width="50"><strong>ステレオタイプ: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{9A753CA0-95C4-405d-813B-2A59E4C75D68}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+					<a href="#" onclick="parent.toggleData('param{AE711E9E-5BAE-492e-B82B-FC98BA5C6CBD}')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="param{AE711E9E-5BAE-492e-B82B-FC98BA5C6CBD}" border="0" />SalesOrderDetailID: int</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{AE711E9E-5BAE-492e-B82B-FC98BA5C6CBD}00" style="display: none;">
+							<td width="50"><strong>既定値:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{AE711E9E-5BAE-492e-B82B-FC98BA5C6CBD}01" style="display: none;">
+							<td width="50"><strong>種類:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{AE711E9E-5BAE-492e-B82B-FC98BA5C6CBD}02" style="display: none;">
+							<td width="50"><strong>ステレオタイプ: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{AE711E9E-5BAE-492e-B82B-FC98BA5C6CBD}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageOperations152" onclick="parent.toggleDiv('detailsDIVOperations152','DetailsImageOperations152')" />詳細:
+						<div id="detailsDIVOperations152" class="DetailsDiv" >
+					<i> &lt;&lt;PK&gt;&gt; </i>
+					<table>
+						<tr>
+							<td valign = "top"><i>タグ:</i><span style="margin-left: .7cm;"> </span></td>
+							<td>NonClustered=0<br/>property=PKNonClustered=0;<br/></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Primary key (clustered) constraint&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>IX_SalesOrderDetail_ProductID</strong>(					<a href="#" onclick="parent.toggleData('param{9072D7CB-CD82-46d7-91D4-2AC0293184F9}')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="param{9072D7CB-CD82-46d7-91D4-2AC0293184F9}" border="0" />ProductID: int</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{9072D7CB-CD82-46d7-91D4-2AC0293184F9}00" style="display: none;">
+							<td width="50"><strong>既定値:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{9072D7CB-CD82-46d7-91D4-2AC0293184F9}01" style="display: none;">
+							<td width="50"><strong>種類:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{9072D7CB-CD82-46d7-91D4-2AC0293184F9}02" style="display: none;">
+							<td width="50"><strong>ステレオタイプ: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{9072D7CB-CD82-46d7-91D4-2AC0293184F9}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageOperations153" onclick="parent.toggleDiv('detailsDIVOperations153','DetailsImageOperations153')" />詳細:
+						<div id="detailsDIVOperations153" class="DetailsDiv" >
+					<i> &lt;&lt;index&gt;&gt; </i>
+					<table>
+						<tr>
+							<td valign = "top"><i>タグ:</i><span style="margin-left: .7cm;"> </span></td>
+							<td>Clustered=0<br/>property=Unique=0;Clustered=0;<br/>Unique=0<br/></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Nonclustered index.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>CK_SalesOrderDetail_OrderQty</strong>():
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageOperations154" onclick="parent.toggleDiv('detailsDIVOperations154','DetailsImageOperations154')" />詳細:
+						<div id="detailsDIVOperations154" class="DetailsDiv" >
+					<i> &lt;&lt;check&gt;&gt; </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Check constraint [OrderQty] #gt; (0)&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>CK_SalesOrderDetail_UnitPrice</strong>():
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageOperations155" onclick="parent.toggleDiv('detailsDIVOperations155','DetailsImageOperations155')" />詳細:
+						<div id="detailsDIVOperations155" class="DetailsDiv" >
+					<i> &lt;&lt;check&gt;&gt; </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Check constraint [UnitPrice] #gt;= (0.00)&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>CK_SalesOrderDetail_UnitPriceDiscount</strong>():
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageOperations156" onclick="parent.toggleDiv('detailsDIVOperations156','DetailsImageOperations156')" />詳細:
+						<div id="detailsDIVOperations156" class="DetailsDiv" >
+					<i> &lt;&lt;check&gt;&gt; </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Check constraint [UnitPriceDiscount] #gt;= (0.00)&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>iduSalesOrderDetail</strong>():
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageOperations157" onclick="parent.toggleDiv('detailsDIVOperations157','DetailsImageOperations157')" />詳細:
+						<div id="detailsDIVOperations157" class="DetailsDiv" >
+					<i> &lt;&lt;trigger&gt;&gt; </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>FK_SalesOrderDetail_Product_ProductID</strong>(					<a href="#" onclick="parent.toggleData('param{FB079883-F333-45d5-8136-811002D10EE2}')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="param{FB079883-F333-45d5-8136-811002D10EE2}" border="0" />ProductID: int</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{FB079883-F333-45d5-8136-811002D10EE2}00" style="display: none;">
+							<td width="50"><strong>既定値:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{FB079883-F333-45d5-8136-811002D10EE2}01" style="display: none;">
+							<td width="50"><strong>種類:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{FB079883-F333-45d5-8136-811002D10EE2}02" style="display: none;">
+							<td width="50"><strong>ステレオタイプ: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{FB079883-F333-45d5-8136-811002D10EE2}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageOperations158" onclick="parent.toggleDiv('detailsDIVOperations158','DetailsImageOperations158')" />詳細:
+						<div id="detailsDIVOperations158" class="DetailsDiv" >
+					<i> &lt;&lt;FK&gt;&gt; </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID</strong>(					<a href="#" onclick="parent.toggleData('param{06F7B510-AC84-488b-AC62-4768D715336C}')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="param{06F7B510-AC84-488b-AC62-4768D715336C}" border="0" />SalesOrderID: int</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{06F7B510-AC84-488b-AC62-4768D715336C}00" style="display: none;">
+							<td width="50"><strong>既定値:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{06F7B510-AC84-488b-AC62-4768D715336C}01" style="display: none;">
+							<td width="50"><strong>種類:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{06F7B510-AC84-488b-AC62-4768D715336C}02" style="display: none;">
+							<td width="50"><strong>ステレオタイプ: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{06F7B510-AC84-488b-AC62-4768D715336C}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageOperations159" onclick="parent.toggleDiv('detailsDIVOperations159','DetailsImageOperations159')" />詳細:
+						<div id="detailsDIVOperations159" class="DetailsDiv" >
+					<i> &lt;&lt;FK&gt;&gt; </i>
+					<table>
+						<tr>
+							<td valign = "top"><i>タグ:</i><span style="margin-left: .7cm;"> </span></td>
+							<td>Delete=Cascade<br/>property=Delete Cascade=1;<br/></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>ノート: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Foreign key constraint referencing SalesOrderHeader.SalesOrderID.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+
+
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">要素</td>
+					<td width="30%" class="TableHeading">ソースの役割</td>
+					<td width="30%" class="TableHeading">ターゲットの役割</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA9.htm">«table» Product</a><br />
+						テーブル «FK» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>名前:</strong> FK_SalesOrderDetail_Product_ProductID<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>名前:</strong> PK_Product_ProductID<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink160" onclick="parent.toggleDiv('detailsDIVLink160','DetailsImageLink160')" />詳細:
+							<div id="detailsDIVLink160" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA15.htm">«table» SalesOrderHeader</a><br />
+						テーブル «FK» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>名前:</strong> FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>名前:</strong> PK_SalesOrderHeader_SalesOrderID<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink161" onclick="parent.toggleDiv('detailsDIVLink161','DetailsImageLink161')" />詳細:
+							<div id="detailsDIVLink161" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">タグ</td>
+			<td width="50%" class="TableHeading">値</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Owner</td>
+				<td width="50%" class="TableRow" valign="top">SalesLT</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario162" onclick="parent.toggleDiv('detailsDIVScenario162','DetailsImageScenario162')" />Details:
+						<div id="detailsDIVScenario162" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>
